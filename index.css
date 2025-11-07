@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap');
 
 body {
-  color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 
 .navbar {
-  background-color: #000000;
-  display: flex;
-  justify-content: flex-end;
+    background-color: #000000;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .navbar-brand {
-  padding-left: 50px;
+    padding-left: 50px;
 }
 
-.navbar-expand-lg .navbar-collapse { 
+.navbar-expand-lg .navbar-collapse {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -24,23 +24,25 @@ body {
 }
 
 .navbar-expand-lg .navbar-collapse {
-  padding-right: 60px;
-  margin: 20px;
-  font-size: 16px;
-  font-family: 'DM Sans', sans-serif;
+    padding-right: 60px;
+    margin: 20px;
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
 }
 
 .navbar-expand-lg .navbar-nav .dropdown-menu {
-        position: absolute;
-        background-color: #D9D9D9;
-        color: #000000;
-    }
-    .navbar-expand-lg .navbar-nav .nav-link {
-        color: #ffffff;
-    }
-    a {
-        color: #1ebe5b;
-    }
+    position: absolute;
+    background-color: #D9D9D9;
+    color: #000000;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+a {
+    color: #1ebe5b;
+}
 
 .dropdown-item {
     font-family: 'DM Sans', sans-serif;
@@ -60,15 +62,15 @@ body {
 }
 
 .btn-whatsapp {
-  background-color: #4CAF50;
-  border-color: #25D366;
-  color: #ffffff;
+    background-color: #4CAF50;
+    border-color: #25D366;
+    color: #ffffff;
 }
 
 .btn-whatsapp:hover {
-  background-color: #1ebe5b;
-  border-color: #1ebe5b;
-  color: #ffffff;
+    background-color: #1ebe5b;
+    border-color: #1ebe5b;
+    color: #ffffff;
 }
 
 .btn-success {
@@ -91,4 +93,97 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
 
+}
+
+/*menu header */
+
+.hero-section {
+    position: relative;
+    background: #fff;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+/* Área amarela com recorte curvo */
+.hero-yellow {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 55%;
+    height: 95%;
+    background: #FFD400;
+    clip-path: ellipse(95% 95% at 100% 55%);
+    z-index: 1;
+}
+
+/* Aba preta apenas no canto inferior esquerdo */
+.hero-black {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    width: 6%;
+    height: 85%;
+    background: #000;
+    z-index: 1;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.persona-img {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    max-width: 420px;
+}
+
+.form-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+    font-family: 'DM Sans';
+    font-size: 37px;
+    text-align: left;
+}
+
+.mb-4 {
+    font-family: 'DM Sans';
+    font-size: 25px;
+}
+
+
+@media (max-width: 991px) {
+    .hero-yellow {
+        width: 100%;
+        height: 65%;
+        clip-path: polygon(0% 55%, 100% 0%, 100% 100%, 90% 100%);
+    }
+
+    .persona-img {
+        margin-top: 20px;
+    }
+
+    .hero-black {
+        width: 100%;
+        height: 40%;
+        clip-path: none;
+        border-bottom-left-radius: 80px;
+    }
+}
+
+.text-center {
+    text-align: center !important;
+    margin-bottom: -25px;
 }
