@@ -521,3 +521,68 @@ a {
         margin-left: 10rem;
     }
 }
+
+
+.servicos-carousel {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.servicos-carousel h2 {
+  font-size: 26px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #222;
+}
+
+.carousel-servicos .card-servico {
+  background: #fff;
+  border: 2px solid #eaeaea;
+  border-radius: 10px;
+  padding: 10px 15px 20px;
+  text-align: center;
+  margin: 0 10px;
+  width: 50%;
+}
+
+.carousel-servicos .card-servico img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.carousel-servicos h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+.btn-saiba {
+  display: block;
+  background: #ffc200;
+  color: #222;
+  padding: 10px 0;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
+  border-radius: 2rem;
+  width: 70%;
+  margin: 0 auto; /* <-- centraliza horizontalmente */
+  text-align: center;
+}
+
+.btn-saiba:hover {
+  background: #e6a900;
+}
+
+/* Se quiser personalizar bolinhas */
+.slick-dots li button:before {
+  font-size: 10px;
+  color: #888;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000;
+}
