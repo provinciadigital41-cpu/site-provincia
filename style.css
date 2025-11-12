@@ -1,0 +1,21 @@
+.clientes {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* Cada item do carrossel */
+.carousel-cell {
+  width: 33%; /* Mostra 3 logos por vez no desktop */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+img, svg {
+    vertical-align: middle;
+    border-radius: 20px;
+}
