@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+
+/*Início-Banner institucional Marcio Menegetti*/
+
+
+.flex-lg-row-reverse {
+    background-color: #EBEBE4;
+ }
+
+/* ESTILOS BASE — MOBILE FIRST */
+
+/* Tipografia base */
+.display {
+    font-family: 'Khula', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    margin: 1rem 1rem;
+}
+
+.texto {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    margin: 0 1.5rem 1.5rem 1.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Botão */
+.botao__cadastro {
+    background-color: #FFE200;
+    color: #000;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    border-radius: 50px;
+    padding: 10px 22px;
+    display: inline-block;
+    margin: 1.5rem auto 0 auto;
+}
+
+/* Imagem */
+.d-block {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.py-5 {
+    background-color: #EBEBE4;  /* Fundo do banner */
+}
+
+
+/*BREAKPOINT 576PX — celulares grandes*/
+
+@media (max-width: 425px) {
+
+    .texto {
+        text-align: justify !important;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .botao__cadastro {
+        font-size: 11px !important;
+        font-weight: 600;
+        padding: 8px 18px; /* para não ficar enorme visualmente */
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .display {
+        font-size: 18px;
+        margin: 1rem 1rem;
+        text-align: center;
+    }
+
+    .texto {
+        font-size: 14px;
+        margin: 0 1.5rem 1rem 1.5rem;
+        /* NÃO usar text-align aqui */
+    }
+
+    .botao__cadastro {
+        font-size: 15px;
+    }
+
+    .bannerinstitucional .row {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .botao__cadastro {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .video-pequeno {
+        margin: 0 auto;
+    }
+}
+
+
+/*BREAKPOINT 768PX — tablets*/
+
+@media (min-width: 768px) {
+    .display {
+        font-size: 30px;
+        text-align: left;
+        margin-left: 1rem;
+    }
+
+    .texto {
+        font-size: 18px;
+        margin-left: 1rem;
+        margin-right: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .botao__cadastro {
+        font-size: 16px;
+        margin-left: 3rem;
+    }
+}
+
+
+/*BREAKPOINT 992PX — notebooks*/
+
+@media (min-width: 992px) {
+    .display {
+        font-size: 18px;
+        margin-left: 1rem;
+    }
+
+    .texto {
+        font-size: 16px;
+        margin-left: 1rem;
+        margin-right: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .d-block {
+        width: 120%;
+        padding-right: 2rem;
+    }
+
+    .botao__cadastro {
+        font-size: 17px;
+        margin-left: 4rem;
+    }
+}
+
+
+/*BREAKPOINT 1200PX — desktops maiores*/
+
+@media (min-width: 1200px) {
+    .display {
+        font-size: 22px;
+        margin-left: 1rem;
+    }
+
+    .texto {
+        font-size: 16px;
+        margin-left: 1rem;
+        margin-right: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    .botao__cadastro {
+        font-size: 18px;
+        margin-left: 6rem;
+    }
+}
+
+/*BREAKPOINT 1400PX — telas grandes*/
+
+@media (min-width: 1400px) {
+    .display {
+        font-size: 22px;
+        margin-left: 1rem;
+    }
+
+    .texto {
+        font-size: 18px;
+        margin-left: 6rem;
+        margin-bottom: 1rem;
+    }
+
+    .d-block {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    .botao__cadastro {
+        font-size: 18px;
+        margin-left: 7rem;
+    }
+}
+
+
+/*BREAKPOINT 1800PX — ultra-wide */
+
+@media (min-width: 1800px) {
+    .display {
+        font-size: 40px;
+        margin-left: 3rem;
+    }
+
+    .texto {
+        font-size: 20px;
+        margin-bottom: 1rem;
+        margin-left: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .botao__cadastro {
+        font-size: 20px;
+    }
+}
+
+.video-pequeno {
+    max-width: 500px;    /* largura máxima */
+    width: 90vw;         /* ocupa 90% da largura da viewport */
+    margin-left: auto;   /* centraliza */
+    margin-right: auto;  /* centraliza */
+    border-radius: 2rem;
+    overflow: hidden;    /* para arredondar o vídeo */
+}
+
+.video-pequeno iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 2rem;
+    display: block;
+}
