@@ -1,40 +1,60 @@
-
-.servicos-carousel {
-  text-align: center;
-  padding: 50px 0;
+.servicos-section { text-align:center; margin:40px auto; }
+.servicos-wrapper {
+  position:relative;
+  max-width:1300px; /* ajuste se quiser */
+  margin: 0 auto;
+  display:flex;
+  align-items:center;
 }
 
-.servicos-carousel h2 {
-  font-size: 26px;
-  margin-bottom: 25px;
-  font-weight: 600;
-  color: #222;
+/* botão */
+.carousel-btn {
+  background: rgba(0,0,0,0.06);
+  border: none;
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  font-size:28px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  z-index: 5;
+}
+.carousel-btn:active { transform:scale(.98); }
+
+/* área scroll (carrossel real) */
+.servicos-scroll {
+  overflow-x:auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  display:flex;
+  gap:20px;
+  padding: 10px 20px;
+  scroll-snap-type: x mandatory;
+  /* remove barra em alguns browsers */
+  scrollbar-width: thin;
+  flex:1; /* ocupa espaço entre botões */
 }
 
-.carousel-servicos .card-servico {
+/* cards */
+.card-servico {
+  flex: 0 0 285px; /* largura fixa do card */
+  scroll-snap-align: start;
   background: #fff;
-  border: 2px solid #eaeaea;
-  border-radius: 10px;
-  padding: 10px 15px 20px;
+  border-radius: 16px;
+  padding: 20px;
+  border: 2px solid #eee;
   text-align: center;
-  margin: 0 10px;
-  width: 50%;
+  transition: transform .25s;
 }
+.card-servico:hover { transform: translateY(-6px); }
 
-.carousel-servicos .card-servico img {
-  width: 100%;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
+.card-servico img { width:100%; border-radius:14px; margin-bottom:15px; }
+.card-servico h3 { font-size:20px; margin:10px 0 15px; }
 
-.carousel-servicos h3 {
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 15px;
-  color: #222;
-}
-
-    .botao__cadastro {
+/* botão amarelo */
+ .botao__cadastro {
         display: block;
         background: #FFE200;
         color: #000;
@@ -56,43 +76,28 @@
   color: #FFE200;
 }
 
-/* Se quiser personalizar bolinhas */
-.slick-dots li button:before {
-  font-size: 10px;
-  color: #888;
+/* responsivo */
+@media (max-width: 992px) {
+  .card-servico { flex: 0 0 280px; }
+}
+@media (max-width: 576px) {
+  .card-servico { flex: 0 0 85%; } /* cards maiores no mobile */
+  .carousel-btn { display:none; } /* esconder botões se quiser no celular */
 }
 
-.slick-dots li.slick-active button:before {
-  color: #000;
+/* --- TABLET: 2 CARDS --- */
+@media (max-width: 992px) {
+    .card-servico {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
 }
 
-
-/* Banner qualidades da empresa */
-
-.qualidades {
-text-align: left;
-padding: 1rem;
-}
-
-.qualidades__texto {
-text-align: left;
-font-size: 18px;
-font-family: 'DM Sans', sans-serif;
-font-weight: 500;
-padding: 1rem;
-}
-
-.banner__qualidades {
-    border-radius: 1rem;
-   
-}
-
-.secao-qualidades .banner__qualidades {
-    border-radius: 1rem;
-    height: 100%;
-    margin-top: -2rem;
-    margin-bottom: -2rem;
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
+/* --- MOBILE: 1 CARD --- */
+@media (max-width: 600px) {
+    .card-servico {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
 }
 

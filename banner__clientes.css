@@ -24,3 +24,24 @@ img, svg {
     border-radius: 20px;
 }
 
+
+
+/* Garantir que a imagem se ajuste */
+.carousel-cell img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 768px) {
+  .carousel-cell {
+    width: 70%;   /* Mostra 1 logo centralizado */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-cell {
+    width: 80%;   /* ainda mais confortável para celulares pequenos */
+  }
+}

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="banner__principal.css">
     <link rel="stylesheet" href="banner__marciomenegeti.css">
     <link rel="stylesheet" href="config__carroussel_servicos.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="banner__clientes.css">
     <link rel="stylesheet" href="chamada_cta.css">
     <link rel="stylesheet" href="footer__rodape.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico.png">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
@@ -129,82 +128,99 @@
             </div>
         </section>
 
-<section>
-    <div class="bannerinstitucional">
-        <div class="container-fluid col-sm-12 col-md-12 col-lg-12">
-            <div class="row flex-lg-row-reverse align-items-center g-4 py-5">
+        <section>
+            <div class="bannerinstitucional">
+                <div class="container-fluid col-sm-12 col-md-12 col-lg-12">
+                    <div class="row flex-lg-row-reverse align-items-center g-4 py-5">
 
-                <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
-                    <div class="video-pequeno ratio ratio-16x9">
-                        <iframe 
-                            src="https://www.youtube.com/embed/40VoVo5Y1n8?list=PLAFsXBxIjkvlBqK_7Bq_QOUDqii7NdxAi"
-                            title="YouTube video player"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen>
-                        </iframe>
+                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                            <div class="video-pequeno ratio ratio-16x9">
+                                <iframe
+                                    src="https://www.youtube.com/embed/40VoVo5Y1n8?list=PLAFsXBxIjkvlBqK_7Bq_QOUDqii7NdxAi"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-xl-6">
+                            <br>
+                            <h1 class="display">Há mais de 20 anos protegendo marcas no Brasil e no exterior.</h1>
+                            <p class="texto">
+                                A Província Marcas & Patentes é referência em proteção de propriedade intelectual,
+                                oferecendo soluções completas para o registro e a defesa de marcas. Com uma equipe
+                                especializada e experiência consolidada no mercado, garantimos segurança jurídica,
+                                agilidade e atendimento personalizado para empresas de todos os portes. Nosso
+                                compromisso
+                                é proteger o que torna o seu negócio único.
+                            </p>
+                            <div class="d-grid">
+                                <a href="sobrenos.html" type="button" class="botao__cadastro mx-auto">
+                                    Conheça nossa história
+                                </a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
-                <div class="col-lg-6 col-xl-6">
-                    <br>
-                    <h1 class="display">Há mais de 20 anos protegendo marcas no Brasil e no exterior.</h1>
-                    <p class="texto">
-                        A Província Marcas & Patentes é referência em proteção de propriedade intelectual,
-                        oferecendo soluções completas para o registro e a defesa de marcas. Com uma equipe
-                        especializada e experiência consolidada no mercado, garantimos segurança jurídica,
-                        agilidade e atendimento personalizado para empresas de todos os portes. Nosso compromisso
-                        é proteger o que torna o seu negócio único.
-                    </p>
-                    <div class="d-grid">
-                        <a href="sobrenos.html" type="button" class="botao__cadastro mx-auto">
-                            Conheça nossa história
-                        </a>
-                    </div>
-                </div>
-
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
         <br><br><br>
 
-        <section class="servicos-carousel">
-            <h2>Conheça nossos principais serviços em registro e proteção de propriedade intelectual:</h2>
+        <section>
 
-            <div class="carousel-servicos">
-                <div class="card-servico">
-                    <img src="assets/Registro de marcas-1.png" alt="Direito Autoral">
-                    <h3>Registro de Marcas</h3>
-                    <a href="#" class="btn-saiba">Saiba mais</a>
+            <section class="servicos-section">
+                <h2>Conheça nossos principais serviços em registro e proteção de propriedade intelectual:</h2>
+
+                <div class="servicos-wrapper">
+                    <button class="carousel-btn prev" aria-label="Anterior">‹</button>
+
+                    <div class="servicos-scroll" id="servicosScroll">
+                        <!-- CARD 1 -->
+                        <div class="card-servico">
+                            <img src="assets/Registro de marcas-1.png" alt="">
+                            <h3>Marcas</h3>
+                            <a class="botao__cadastro" href="#">Saiba mais</a>
+                        </div>
+
+                        <!-- CARD 2 -->
+                        <div class="card-servico">
+                            <img src="assets/Patente-1.png" alt="">
+                            <h3>Patentes</h3>
+                            <a class="botao__cadastro" href="#">Saiba mais</a>
+                        </div>
+
+                        <!-- CARD 3 -->
+                        <div class="card-servico">
+                            <img src="assets/Software.png" alt="">
+                            <h3>Software</h3>
+                            <a class="botao__cadastro" href="#">Saiba mais</a>
+                        </div>
+
+                        <!-- CARD 4 -->
+                        <div class="card-servico">
+                            <img src="assets/direito autoral-2.png" alt="">
+                            <h3>Direito Autoral</h3>
+                            <a class="botao__cadastro" href="#">Saiba mais</a>
+                        </div>
+
+                        <!-- CARD 5 -->
+                        <div class="card-servico">
+                            <img src="assets/desenho industrial.webp" alt="">
+                            <h3>Desenho Industrial</h3>
+                            <a class="botao__cadastro" href="#">Saiba mais</a>
+                        </div>
+
+
+                    </div>
+
+                    <button class="carousel-btn next" aria-label="Próximo">›</button>
                 </div>
+            </section>
 
-                <div class="card-servico">
-                    <img src="assets/Patente-1.png" alt="Marcas">
-                    <h3>Patentes</h3>
-                    <a href="#" class="btn-saiba">Saiba mais</a>
-                </div>
 
-                <div class="card-servico">
-                    <img src="assets/Software.png" alt="Patentes">
-                    <h3>Software</h3>
-                    <a href="#" class="btn-saiba">Saiba mais</a>
-                </div>
-
-                <div class="card-servico">
-                    <img src="assets/desenho industrial.webp" alt="Software">
-                    <h3>Desenho Industrial</h3>
-                    <a href="#" class="btn-saiba">Saiba mais</a>
-                </div>
-
-                <div class="card-servico">
-                    <img src="assets/direito autoral.jpg" alt="Desenhos Industriais">
-                    <h3>Direito Autoral</h3>
-                    <a href="#" class="btn-saiba">Saiba mais</a>
-                </div>
-
-            </div>
         </section>
 
         <section>
@@ -303,7 +319,7 @@
             <!-- Flickity HTML init -->
             <br><br>
 
-            <div class="carousel" data-flickity='{ 
+    <div class="carousel" data-flickity='{ 
        "wrapAround": true, 
        "autoPlay": 3000, 
        "prevNextButtons": true, 
@@ -320,7 +336,7 @@
                 <div class="carousel-cell"><img src="assets/Marcas/alinebarros.png" alt></div>
                 <div class="carousel-cell"><img src="assets/Marcas/larissamanoela.png" alt></div>
 
-            </div>
+    </div>
         </section>
         <br><br><br>
 
@@ -412,32 +428,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
-    <script>
-        $('.carousel-servicos').slick({
-            infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            dots: true,
-            arrows: true,
-            responsive: [
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2
-                    }
-                },
-                {
-                    breakpoint: 576,
-                    settings: {
-                        slidesToShow: 1
-                    }
-                }
-            ]
-        });
-    </script>
-
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="index.js"></script>
 
 </body>
+
 </html>
