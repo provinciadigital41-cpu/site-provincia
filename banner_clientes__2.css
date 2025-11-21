@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+
+.clientes {
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.clientes__titulos {
+    font-family: 'Khula', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0; /* garante centralização perfeita */
+    text-align: left;
+    padding-left: 6rem;
+    padding-bottom: 1rem;
+    
+}
+
+.clientes__titulos_texto {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0; /* garante centralização perfeita */
+    text-align: left;
+    padding-left: 6rem;
+}
+
+@media (max-width: 376px) {
+   .clientes__titulos {
+    font-family: 'Khula', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0; /* garante centralização perfeita */
+    text-align: left;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
+    
+}
+
+.clientes__titulos_texto {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0; /* garante centralização perfeita */
+    text-align: left;
+    padding-left: 2rem;
+}
+    }
+
+
+/* Cada item do carrossel */
+.carousel-cell {
+  width: 33%; /* Mostra 3 logos por vez no desktop */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+}
+
+img, svg {
+    vertical-align: middle;
+    border-radius: 20px;
+}
+
+
+
+/* Garantir que a imagem se ajuste */
+.carousel-cell img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+/* --- MOBILE --- */
+@media (max-width: 768px) {
+  .carousel-cell {
+    width: 70%;   /* Mostra 1 logo centralizado */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-cell {
+    width: 80%;   /* ainda mais confortável para celulares pequenos */
+  }
+}

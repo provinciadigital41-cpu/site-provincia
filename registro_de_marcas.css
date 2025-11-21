@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+
+.banner_sobre__nos {
+    background-color: #FFE200;
+    color: #000;
+    width: 100%;
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay-yellow {
+    background: #ffdd00;
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.banner-estatico {
+    background-image: url("assets/Imagens-banner-sobre nos/Banner-servicos (5).png");
+    height: 380px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* 992px ou menos (telas tablets e notebooks menores) */
+@media (max-width: 992px) {
+    .banner-estatico {
+        height: 300px;
+        background-position: top center;
+    }
+}
+
+/* 768px ou menos (telas mobile grandes) */
+@media (max-width: 768px) {
+    .banner-estatico {
+        height: 240px;
+        background-size: contain;
+        /* evita corte */
+        background-repeat: no-repeat;
+    }
+
+    .overlay-yellow {
+        height: 60px;
+    }
+
+}
+
+/* 576px ou menos (mobile comum) */
+@media (max-width: 576px) {
+    .banner-estatico {
+        height: 200px;
+        margin-bottom: -5rem;
+        width: 103%;
+    }
+
+    .banner_sobre__nos {
+        width: 103%;
+    }
+
+    .g-5,
+    .gy-5 {
+        --bs-gutter-y: -1rem;
+    }
+}
+
+---------------------------------
+/*Página sobre nós*/
+
+.primeiro__paragrafo {
+    font-family: 'Khula', sans-serif;
+    font-size: 38px;
+    font-weight: 700;
+    margin-top: 5rem;
+
+}
+
+.texto_empresa {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    font-size: 20px;
+}
+
+.sobre_nos {
+    display: flex;
+    justify-content: space-evenly;
+    color: #000;
+}
+
+.texto_sobrenos__01 {
+    text-align: justify;
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #000;
+}
+
+.texto_sobrenos {
+    text-align: justify;
+    display: flex;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+}
+
+
+.texto {
+    padding-bottom: 25rem;
+}
+
+.paragrafo__final {
+    margin-bottom: 5rem;
+}
+
+
+/* stylelint-disable stylistic/selector-list-comma-newline-after */
+
+.blog-header-logo {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif
+        /*rtl:Amiri, Georgia, "Times New Roman", serif*/
+    ;
+    font-size: 2.25rem;
+}
+
+.blog-header-logo:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif
+        /*rtl:Amiri, Georgia, "Times New Roman", serif*/
+    ;
+}
+
+.flex-auto {
+    flex: 0 0 auto;
+}
+
+.h-250 {
+    height: 250px;
+}
+
+@media (min-width: 768px) {
+    .h-md-250 {
+        height: 250px;
+    }
+}
+
+/* Pagination */
+.blog-pagination {
+    margin-bottom: 4rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+    margin-bottom: 4rem;
+}
+
+.blog-post-meta {
+    margin-bottom: 1.25rem;
+    color: #727272;
+}
+
+
+.text__formatos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+}
+
+.card-text {
+    text-align: justify;
+    padding: 2px;
+}
+
+
+.images_blog {
+    border-radius: 1rem;
+}
+
+
+.carousel-cell {
+    width: 260px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.card-servico {
+    background: #fff;
+    border-radius: 20px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: .3s ease;
+}
+
+.card-servico:hover {
+    transform: translateY(-5px);
+}
+
+.card-servico img {
+    width: 100%;
+    max-width: 180px;
+    height: auto;
+    margin: 0 auto 1rem;
+}
+
+.titulo-servico {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.botao__cadastro {
+    display: block;
+    background: #FFE200;
+    color: #000;
+    padding: 10px 0;
+    font-weight: 600;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+    border-radius: 2rem;
+    width: 40%;
+    margin: 0 auto;
+    /* <-- centraliza horizontalmente */
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+}
+
+.botao__cadastro:hover {
+    background: #000;
+    color: #FFE200;
+}
+
+.texto_flickity {
+    font-family: 'Khula', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center !important;
+    width: 100%;
+    display: block;
+}
+
+
+
+
+@media (max-width: 778px) {
+    .texto {
+        padding-bottom: 1rem !important;
+    }
+}

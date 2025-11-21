@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+
+.qualidades {
+    font-size: 25px;
+    font-family: 'Khula', sans-serif;
+    font-weight: 700;
+}
+
+.qualidades__texto {
+    font-size: 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+}
+
+.texto_qualidades {
+    font-size: 16px;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+}
+
+.py-5 {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+    border-radius: 2rem;
+    justify-content: center;
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300;400;600;700;800&display=swap');
+
+
+.principais__servicos {
+    font-family: 'Khula', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0; /* garante centralização perfeita */
+}
+
+.servicos-section { text-align:center; margin:40px auto; }
+.servicos-wrapper {
+  position:relative;
+  max-width:1300px; /* ajuste se quiser */
+  margin: 0 auto;
+  display:flex;
+  align-items:center;
+}
+
+/* botão */
+.carousel-btn {
+  background: rgba(0,0,0,0.06);
+  border: none;
+  width:48px;
+  height:48px;
+  border-radius:50%;
+  font-size:28px;
+  display:flex;
+  align-items:start;
+  justify-content:center;
+  cursor:pointer;
+  z-index: 5;
+}
+.carousel-btn:active { transform:scale(.98); }
+
+/* área scroll (carrossel real) */
+.servicos-scroll {
+  overflow-x:auto;
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+  display:flex;
+  gap:20px;
+  padding: 10px 20px;
+  scroll-snap-type: x mandatory;
+  /* remove barra em alguns browsers */
+  scrollbar-width: thin;
+  flex:1; /* ocupa espaço entre botões */
+}
+
+/* cards */
+.card-servico {
+  flex: 0 0 285px; /* largura fixa do card */
+  scroll-snap-align: start;
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  border: 2px solid #eee;
+  text-align: center;
+  transition: transform .25s;
+}
+.card-servico:hover { transform: translateY(-6px); }
+
+.card-servico img { width:100%; border-radius:14px; margin-bottom:15px; }
+.card-servico h3 { font-size:20px; margin:10px 0 15px; }
+
+/* botão amarelo */
+ .botao__cadastro {
+        display: block;
+        background: #FFE200;
+        color: #000;
+        padding: 10px 0;
+        font-weight: 600;
+        border-radius: 6px;
+        text-decoration: none;
+        transition: 0.3s;
+        border-radius: 2rem;
+        width: 40%;
+        margin: 0 auto; /* <-- centraliza horizontalmente */
+        text-align: center;
+        font-family: 'DM Sans', sans-serif;
+        font-size: 14px;
+}
+
+.botao__cadastro:hover {
+  background: #000;
+  color: #FFE200;
+}
+
+/* responsivo */
+@media (max-width: 992px) {
+  .card-servico { flex: 0 0 280px; }
+}
+@media (max-width: 576px) {
+  .card-servico { flex: 0 0 85%; } /* cards maiores no mobile */
+  .carousel-btn { display:none; } /* esconder botões se quiser no celular */
+}
+
+/* --- TABLET: 2 CARDS --- */
+@media (max-width: 992px) {
+    .card-servico {
+        flex: 0 0 calc(50% - 20px);
+        max-width: calc(50% - 20px);
+    }
+}
+
+/* --- MOBILE: 1 CARD --- */
+@media (max-width: 600px) {
+    .card-servico {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
